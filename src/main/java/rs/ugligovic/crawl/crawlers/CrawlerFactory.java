@@ -30,8 +30,7 @@ public class CrawlerFactory {
             case "lrt.li":
                 return new LrtCrawler();
             default:
-                throw new NoDefinedCrawlerException("No defined crawler for "+url); // TODO make special exception for unimplemented crawler
-            
+                throw new NoDefinedCrawlerException("No defined crawler for "+url);
             
         }
         
